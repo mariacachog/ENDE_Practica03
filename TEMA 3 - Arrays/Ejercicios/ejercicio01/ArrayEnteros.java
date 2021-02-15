@@ -120,32 +120,7 @@ public class ArrayEnteros
 		
 		/* Eliminar. Solicita la posici�n donde se desea eliminar un dato, siendo �sta una de las que est�n ocupadas. 
 		* Si la posici�n es v�lida lleva a cabo la eliminaci�n actualizando el n�mero de elementos.*/
-		public void eliminar()
-		{
-			int posicion;
-			boolean posicionValida;
-
-			//Pedir la posici�n por teclado y comprobar que est� ocupada
-			do
-			{
-				Scanner entrada = new Scanner (System.in);
-				System.out.print("Introduce la posici�n de la que quieres eliminar el dato: ");
-				posicion = entrada.nextInt();
-				posicionValida = (posicion >= 0 && posicion <= numElem);
-				if (!posicionValida) {
-					System.out.print("La posici�n no es v�lida. ");
-				}
-			}
-			while (!posicionValida);
-			
-			//Eliminar el elemento de la posici�n indicada y mover los elementos
-									
-			for(int i = posicion; i < numElem -1; i++) 
-			{
-				array[i] = array[i + 1];
-			}
-			numElem--;
-		}
+		
 		
 		/*busquedaSecuencial. Realiza un b�squeda secuencial (no ordenada). 
 		 * Devuelve la posici�n donde se encuentra el elemento, -1 si no se encuentra.*/

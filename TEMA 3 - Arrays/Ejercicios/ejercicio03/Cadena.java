@@ -22,20 +22,7 @@ public class Cadena {
 	
 	/* leerCadena. Lee una cadena por teclado, almacenando un '/0' después del último carácter. 
 	 * Dejamos de introducir caracteres a pulsar enter*/
-	public void leerCadena() throws IOException //Siempre que se utilice un método read hay que importar el paquete java.io.IOException
-	{
-		int i = 0;
-		char letra = (char)System.in.read();
-		
-		while(i < tamMax &&letra != '\n')
-		{
-			cadena[i] = letra;
-			i++;
-			letra = (char)System.in.read();
-			//Siempre que se utilice un método read hay que importar el paquete java.io.IOException
-		}
-		cadena[i] = '\0';
-	}
+	
 	
 	//escribirCadena. Envía el contenido de la cadena al monitor.
 	

@@ -27,16 +27,6 @@ public class Matriz {
 		}
 	}
 	
-	public void verMatriz() {
-		Scanner entrada = new Scanner(System.in);
-		System.out.println("Introduce los valores de la matriz: ");
-		for(int fila = 0; fila < numFilas; fila ++) {
-			for(int columna = 0; columna < numColumnas; columna ++) {
-				System.out.print(matriz[fila][columna] + "\t");
-			}
-			System.out.println();
-		}
-	}
 	
 	public double sumaDiagonalV1() {
 		double suma = 0;

@@ -20,19 +20,6 @@ public class Cadena {
 		cadena = new char[tamMax + 1];
 	}
 	
-	//copiar. Copia el contenido de una cadena en otra, es decir, crear un constructor copia.
-	public Cadena(Cadena copia) 
-	{
-		tamMax = copia.tamMax;
-		cadena = new char[tamMax + 1];
-		int i;
-		for(i = 0; copia.cadena[i] != '\0'; i++) //'\0' es la representación del final de la cadena
-		{
-			cadena[i] = copia.cadena[i];
-		}
-		cadena[i] = '\0';
-	}
-	
 	/* leerCadena. Lee una cadena por teclado, almacenando un '/0' después del último carácter. 
 	 * Dejamos de introducir caracteres a pulsar enter*/
 	public void leerCadena() throws IOException //Siempre que se utilice un método read hay que importar el paquete java.io.IOException
